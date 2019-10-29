@@ -304,8 +304,8 @@ namespace OpenNos.Import.Console
             {
                 while ((line = mapIdStream.ReadLine()) != null)
                 {
-                    string[] linesave = line.Split(' ');
-                    if (linesave.Length <= 1)
+                    string[] linesave = line.Split('\t');
+                    if (linesave.Length <= 2)
                     {
                         continue;
                     }
